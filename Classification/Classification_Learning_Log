@@ -1,0 +1,26 @@
+For a short program, this is a very powerful. I was introduced to the
+scikit-learn library, it is an open source set of machine learning libraries
+for Python, and is also used for statistical modelling.
+
+I chose to use this library in oppose to using a combination of if statements
+to create a more efficient code and one that expanded my skillset. To get this
+code to work as intended, I also read up on the enumerate method
+
+
+Learning about enumerate: https://www.programiz.com/python-programming/methods/built-in/enumerate
+The purpose of the enumerate method is to The enumerate() method adds counter
+to an iterable and returns it. The returned object is a enumerate object.
+
+Learning about predict_probab: https://stackoverflow.com/questions/40770638/sklearn-predict-multiple-outputs
+I was going to use the predict_probab rather than .predict method because some
+of the programming languages have the same features and I wanted the program to
+share all three with the user. However, I found that it was challenging to
+accomodate for one result as well as multiple results (when one worked, the
+other didn't). I will come back to this as I learn more about machine learning.
+
+Learned more about decision trees in Python here: https://towardsdatascience.com/scikit-learn-decision-trees-explained-803f3812290d
+I also read up about decisioin tree in Python to facilaite machine learning, I
+think what happens is the features are normalised and then a threshold is set
+to say the machine has worked out the target value. I think there's more to
+this but I will come back to the problem as I think I've jumped a few steps as
+well in this area.

@@ -1,0 +1,14 @@
+I initially misunderstood this problem, I thought I could solve it by ordering
+the user's entry into ascending and descending order (into to separate
+variables) and then simply print all the numbers in between, but that of course
+included numbers that were not available.
+
+The correct solution involved learning about the permutations method:
+
+Read here - https://docs.python.org/3/library/itertools.html
+
+It finds out all the different combinations of the numbers and then I printed
+it to a list which I was able to iterate through and print for each possible
+combination. I was able to check the answer was correct by counting the number
+of combinations which should be 4! = 24.
+
