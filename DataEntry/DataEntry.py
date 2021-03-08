@@ -6,6 +6,7 @@ import time
 from texttable import Texttable
 
 
+# prompts the user to enter member details
 def register_member():
     time.sleep(1)
     print("\n You've chosen to register a new member, please enter their "
@@ -17,6 +18,7 @@ def register_member():
     return member
 
 
+# introduces the program and the menu
 def main():
     # introduce the user to the program
     print()
@@ -38,13 +40,19 @@ def main():
     while choice != 1 and choice != 2:
         choice = int(input("\nPlease select 1 or 2: "))
 
+    # depending on the number of entrants
+    # the user will be prompted to entered member details a specified number
+    # of times, and their details are displayed in a table
     if choice == 1:
-        new_member = register_member()
+        num_of_members = int(input("How many new members?: "))
+        t = Texttable()
+        for each in range(num_of_members):
+            new_member = register_member()
+            t.add_rows(
+                [["First Name", "Last Name", "Centre Name"], new_member])
         print("\n Reviewing details...")
         time.sleep(1)
         print()
-        t = Texttable()
-        t.add_rows([["First Name", "Last Name", "Centre Name"], new_member])
         print(t.draw())
 
 
